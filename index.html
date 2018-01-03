@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/onsen/2.8.3/css/onsenui.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/onsen/2.8.3/css/onsen-css-components.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/onsen/2.8.3/js/onsenui.min.js"></script>
+  <link rel="stylesheet" href="css/onsenui.css">
+  <link rel="stylesheet" href="css/onsen-css-components.min.css">
+  <script src="js/onsenui.min.js"></script>
   <script src="js/content.js"></script>
-  <link rel="stylesheet" href="css/sweetalert2.css">
-  <script src="js/sweetalert2.js"></script>
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.3.2/sweetalert2.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.3.2/sweetalert2.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.3.2/sweetalert2.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.3.2/sweetalert2.min.js"></script>
 
 </head>
 
@@ -76,6 +77,15 @@
     </ons-page>
   </template>
 </ons-page>
-
+<scripit>
+    ons.ready(function()
+   {
+     swal(
+      'Good job!',
+      'You clicked the button!',
+      'success'
+    )
+  });
+</scripit>
 </body>
 </html>
