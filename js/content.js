@@ -1,10 +1,15 @@
-function logo()
-{
 
-  var modal = document.querySelector('ons-modal');
-  modal.show();
-  setTimeout(function() {
-    modal.hide();
-  }, 2000);
+  var showPopover = function(target) {
+    document
+      .getElementById('popover')
+      .show(target);
+  };
   
+  
+
+var hidePopover = function() {
+  document
+    .getElementById('popover')
+    .hide();
 };
+
