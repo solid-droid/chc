@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="css/onsenui.css">
   <link rel="stylesheet" href="css/onsen-css-components.min.css">
+  <link rel="stylesheet" href="css/content.css">
   <script src="js/onsenui.min.js"></script>
   <script src="js/content.js"></script>
 
@@ -11,7 +12,7 @@
 
   <ons-page>
     <ons-toolbar>
-      <div class="left"><ons-toolbar-button onclick="logo()">
+      <div class="left"><ons-toolbar-button onclick="showPopover(this)">
           <img class="one" src="Untitled.png" alt="Reboot" width="160" height=100%>
       </ons-toolbar-button>
           Ver 1.1.2018
@@ -35,15 +36,7 @@
     <ons-page id="Tab1">
 
       <p style="text-align: center;">
-      Reboot is a general club 
-      designed to evolve the 
-      technical caliber of 
-      every member.The platform
-      focuses on the development and innovation
-      relevent in the society.
-      The fundamental platform for
-      <br>novel innovations in <br>
-      Model engineering college.  
+      
        </p>
     </ons-page>
   </template>
@@ -74,12 +67,16 @@
     </ons-page>
   </template>
 </ons-page>
-<ons-modal direction="up">
-    <div style="text-align: center">
+<ons-popover direction="down" id="popover">
+    <div style="padding: 10px; text-align: center;">
       <p>
-        <ons-icon icon="md-spinner" size="28px" spin></ons-icon><i> Loading...</i>
+        This is a popover
+      </p>
+      <p>
+        <ons-button onclick="hidePopover()">Close</ons-button>
       </p>
     </div>
-  </ons-modal>
+  </ons-popover>
+ 
 </body>
 </html>
